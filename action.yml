@@ -1,0 +1,22 @@
+name: 'Metaphor DBT Metadata'
+description: 'Publish DBT metadata to Metaphor'
+inputs:
+  manifest:
+    description: 'Path to DBT manifest.json file'
+    required: true
+
+  catalog:
+    description: 'Path to DBT catalog.json file'
+    required: true
+
+  s3-path: 
+    description: 'S3 path for outputting the metadata'
+    required: true
+
+runs:
+  using: 'docker'
+  image: 'Dockerfile'
+  args:
+    - ${{ inputs.manifest }}
+    - ${{ inputs.catalog }}
+    - ${{ inputs.s3-path }}
