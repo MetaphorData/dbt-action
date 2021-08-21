@@ -8,7 +8,7 @@ cat << EOF > dbt.json
   "catalog": "/github/workspace/$2",
   "output": {
     "file": {
-      "output": "$3"
+      "path": "$3"
     }
   }
 }
