@@ -9,6 +9,10 @@ inputs:
     description: 'Path to DBT catalog.json file'
     required: true
 
+  account:
+    description: 'The database service account this DBT project is connected to'
+    required: true
+
   s3-path: 
     description: 'S3 path for outputting the metadata'
     required: true
