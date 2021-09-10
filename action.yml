@@ -23,4 +23,5 @@ runs:
   args:
     - ${{ inputs.manifest }}
     - ${{ inputs.catalog }}
+    - ${{ inputs.account }}
     - ${{ inputs.s3-path }}
