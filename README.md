@@ -21,6 +21,12 @@ Add the following to the [GitHub Workflow](https://docs.github.com/en/actions/re
     
     # S3 URL for the output, in the form of s3://<bucket>/<file_name>.json
     s3-path: ''
+
+    # (Optional) The base URL serving the dbt generated docs
+    docs_base_url: ''
+
+    # (Optional) The source code URL pointing to the project root directory
+    project_source_code_url: ''
 ```
 
 # License

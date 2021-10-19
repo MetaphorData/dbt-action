@@ -17,6 +17,14 @@ inputs:
     description: 'S3 path for outputting the metadata'
     required: true
 
+  docs_base_url:
+    description: 'The base URL serving the dbt generated docs'
+    required: false
+
+  project_source_code_url:
+    description: 'The source code URL pointing to the project root directory'
+    required: false
+
 runs:
   using: 'docker'
   image: 'Dockerfile'
@@ -25,3 +33,5 @@ runs:
     - ${{ inputs.catalog }}
     - ${{ inputs.account }}
     - ${{ inputs.s3-path }}
+    - ${{ inputs.docs_base_url }}    
+    - ${{ inputs.project_source_code_url }}
