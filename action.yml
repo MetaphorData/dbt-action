@@ -20,10 +20,12 @@ inputs:
   project_source_code_url:
     description: 'The source code URL pointing to the project root directory'
     required: false
+    default: ''
 
   docs_base_url:
     description: 'The base URL serving the dbt generated docs'
     required: false
+    default: ''
 
 runs:
   using: 'docker'
