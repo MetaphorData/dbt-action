@@ -9,8 +9,8 @@ account: "$3"
 output:
   file:
     path: "$4"
-docsBaseUrl: "$5"
-projectSourceUrl: "$6"
+projectSourceUrl: "$5"
+docsBaseUrl: "$6"
 EOF
 
 python -m metaphor.dbt dbt.yaml
