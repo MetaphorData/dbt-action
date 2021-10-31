@@ -6,11 +6,14 @@ cat << EOF > dbt.yaml
 manifest: "/github/workspace/$1"
 catalog: "/github/workspace/$2"
 account: "$3"
+project_source_url: "$4"
+docs_base_url: "$5"
 output:
   file:
-    path: "$4"
-projectSourceUrl: "$5"
-docsBaseUrl: "$6"
+    path: "$6"
 EOF
+
+echo "Generated dbt.yaml:"
+cat dbt.yaml
 
 python -m metaphor.dbt dbt.yaml

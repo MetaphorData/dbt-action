@@ -23,10 +23,10 @@ Add the following to the [GitHub Workflow](https://docs.github.com/en/actions/re
     s3-path: ''
 
     # (Optional) The source code URL pointing to the project root directory, e.g. https://github.com/<account>/<repo>/<project>
-    project_source_code_url: ''
+    project-source-url: ''
 
     # (Optional) The base URL serving the dbt generated docs
-    docs_base_url: ''
+    docs-base-url: ''
 ```
 
 # License

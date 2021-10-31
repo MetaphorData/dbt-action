@@ -13,19 +13,19 @@ inputs:
     description: 'The database service account this DBT project is connected to'
     required: true
 
-  s3-path: 
-    description: 'S3 path for outputting the metadata'
-    required: true
-
-  project_source_code_url:
+  project-source-url:
     description: 'The source code URL pointing to the project root directory'
     required: false
     default: ''
 
-  docs_base_url:
+  docs-base-url:
     description: 'The base URL serving the dbt generated docs'
     required: false
     default: ''
+
+  s3-path: 
+    description: 'S3 path for outputting the metadata'
+    required: true
 
 runs:
   using: 'docker'
@@ -34,6 +34,6 @@ runs:
     - ${{ inputs.manifest }}
     - ${{ inputs.catalog }}
     - ${{ inputs.account }}
+    - ${{ inputs.project-source-url }}
+    - ${{ inputs.docs-base-url }}
     - ${{ inputs.s3-path }}
-    - ${{ inputs.project_source_code_url }}
-    - ${{ inputs.docs_base_url }}
