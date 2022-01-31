@@ -21,7 +21,7 @@ Add the following to the [GitHub Workflow](https://docs.github.com/en/actions/re
     # The database service account this DBT project is connected to
     account: ''
     
-    # S3 URL for the output, in the form of s3://<bucket>/<file_name>.json
+    # S3 URL for the output, in the form of s3://<bucket>/<directory>
     s3-path: ''
 
     # (Optional) The source code URL pointing to the project root directory, e.g. https://github.com/<account>/<repo>/<project>
