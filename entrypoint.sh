@@ -10,7 +10,7 @@ project_source_url: "$4"
 docs_base_url: "$5"
 output:
   file:
-    path: "$6"
+    directory: "$6"
 EOF
 
 echo "Generated dbt.yaml:"
