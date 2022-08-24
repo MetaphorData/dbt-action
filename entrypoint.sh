@@ -16,4 +16,4 @@ EOF
 echo "Generated dbt.yaml:"
 cat dbt.yaml
 
-python -m metaphor.dbt dbt.yaml
+metaphor dbt dbt.yaml
